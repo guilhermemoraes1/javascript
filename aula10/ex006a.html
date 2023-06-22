@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos DOM</title>
+  <style>
+    div {
+      font: bold 20px sans-serif;
+      background-color: blue;
+      color: white;
+      width: 200px;
+      height: 200px;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    LOREM
+  </div>
+  <script>
+    var a = document.getElementById("area");
+
+    function clicar() {
+      // Quando eu clicar na div, o texto muda para Eventos DOM
+      // document.getElementById("area").innerHTML = "Eventos DOM";
+      
+      a.innerHTML = 'Clicou!';
+      a.style.background = 'red';
+    };
+
+    function entrar() { 
+      a.innerHTML = 'Entrar!';
+    };
+
+    function sair() {
+      a.innerHTML = 'Sair!';
+      a.style.background = 'blue';
+    }
+  </script>
+</body>
+</html>

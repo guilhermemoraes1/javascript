@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulado</title>
+</head>
+<style>
+  body {
+    font: normal 18px Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  #btn {
+    width: 7%;
+    font-size: 0.82em;
+    padding: 0.15rem 0.75rem;
+    margin-left: 0.5rem;
+    border: 0;
+    border-radius: 5px;
+    font-weight: bolder;
+    background-color: #009c3b;
+    color: #FFF;
+    cursor: pointer;
+  }
+  
+</style>
+<body>
+  <h1>Descubra se você é brasileiro &#x1F1E7;&#x1F1F7;</h1>
+  <span>De qual país você é: <input type="text" id="valor"></span>
+  <input id="btn" type="button" value="Enviar" onclick="examinar()">
+  <div id="res"></div>
+  <script>
+    function examinar() {
+      var nacionalidade = document.querySelector('#valor').value;
+      var res = document.getElementById('res');
+      res.innerHTML = `<p>Você nasceu no(a) ${nacionalidade}.</p>`;
+      if (nacionalidade == 'Brasil') {
+        res.innerHTML += '<p>Então, você é <strong>brasileiro.</strong></p>';
+      } else {
+        res.innerHTML += '<p>Então, você é <strong>estrangeiro.</strong></p>';
+      }
+    }
+  </script>
+</body>
+</html>

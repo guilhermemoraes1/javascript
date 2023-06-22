@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andando em DOM</title>
+  <style>
+    body {
+      background: #1f1f1f;
+      color: white;
+      font: normal;
+    }
+
+    p {
+      font-size: 22px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Iniciando estudos com DOM</h1>
+  <p>Aqui vai o resultado</p>
+  <p>Aqrendendo a usar o <strong>DOM</strong> em <em>JavaScript</em>.</p>
+  <div id="msg">Clique em mim</div>
+  <script>
+    // Usei getElementsByTagName();
+
+    var p1 = window.document.getElementsByTagName('p')[0];
+    window.document.writeln('<p>O conteúdo da primeira tag p: ' + p1.innerText + '</p>');
+
+    // mudei a cor da primeira tag p
+    p1.style.color = 'thistle';
+    
+    var p2 = window.document.getElementsByTagName('p')[1];
+    document.writeln('<p>O conteúdo da segunda tag p: ' + p2.innerText + '</p>');
+    document.writeln('<p>O HTML da segunda tag p: ' + p2.innerHTML + '</p>');
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Super contador</title>
+</head>
+<body>
+  <header>
+    <h1>Vamos contar</h1>
+  </header>
+  <section>
+    <div>
+      <label for="inicio">Início: <input name="inicio" id="inicio" type="number"></label>
+      <label for="fim">Fim: <input type="number" id="fim"></label>
+      <label for="passo">Passo:<input type="number" name="passo" id="passo"></label>
+    </div>
+    <input id="btn" type="button" value="Contar" onclick="contar()">
+    <div id="res">
+      Preparando a contagem...
+    </div>
+  </section>
+  <footer>
+    <p>&copy; CursoemVideo</p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>

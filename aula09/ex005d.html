@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiros passos em DOM</title>
+  <style>
+    #msg2 {
+      background-color: rebeccapurple; 
+      font-family: Arial, Helvetica, sans-serif;     
+    }
+  </style>
+</head>
+<body>
+  <h1>Iniciando estudos com DOM</h1>
+  <p>Aqui vai o resultado</p>
+  <p>Aqrendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+  <div class="msg1">Clique em mim</div>
+  <div name="msg2">Clique em mim</div>
+  <div id="css">Estou usando querySelector </div>
+  <script>
+    /*
+      Usei getElementByClassName();
+      Usei getElementsByClass();
+      Usei querySelector();
+    */
+
+    var na = window.document.getElementsByClassName('msg1')[0];
+    na.innerText = 'Eu estrou dentro da div usando o getElementsByClassName()';
+    na.style.padding = '15px';
+
+    document.getElementsByName('msg2')[0].innerText = 'Usei um atalho junto com getElementsByName()';
+    window.document.getElementsByName('msg2')[0].style.padding = '15px';
+
+    var query = document.querySelector('div#css');
+    query.style.background = 'red';
+
+
+  </script>
+</body>
+</html>

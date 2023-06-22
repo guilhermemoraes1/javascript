@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font: normal 20px sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    /*
+      AULA 07 Operadores (parte 1)
+
+      Operadores aritméticos
+      5 / 2 = 2.5
+      5 % 2 = 1
+      5 ** 2 = 25
+
+      x++ => x += 1
+      x-- => x -=1
+    */
+
+    /*
+      AULA 08 Operadores (parte 2)
+
+      5 == 5 => true
+      5 == '5' => true
+      5 === '5' => false
+      5 === 5 => true
+
+
+      Operador ternário 
+
+      var media = 5.5;
+      media > 7?'Aprovado':'Reprovado'; => 'Reprovado'
+
+      var x = 8;
+      var res = x % 2 == 0 ? 5 : 9; => 5
+    */
+
+    /*
+      AULA 06
+
+      Formatação de string
+
+      .length
+      .toUpperCase()
+      .toLowerCase() 
+
+      Formatação de números
+
+      n1 = 123.4;
+      n1.toFixed(2); => 123.40
+      n1.toFixed(2).replace('.', ','); => 123,40
+      n1.toLocaleString('pt-BR', {style:'currency', currency:'BRL'}); => R$ 1.545,50
+      n1.toLocaleString('pt-BR', {style:'currency', currency:'USD'}); => US$ 1.545,50
+      n1.toLocaleString('pt-BR', {style:'currency', currency:'EUR'}); => € 1.545,50 
+    */
+
+    nome = window.prompt(`Seu nome é nome?`);
+    document.write(`Olá, ${nome}. Seu nome tem ${nome.length} letras.<br>`);
+    document.write(`Nome maiúsculo: ${nome.toUpperCase()}<br>`);
+    document.write(`Nome minúsculo: ${nome.toLowerCase()}`);
+  </script>
+</body>
+</html>

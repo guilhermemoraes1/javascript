@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiro JS</title>
+  <style>
+    body {
+      background-color: rgb(105, 105, 173);
+      color: white;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+     h1 {
+      color: lightyellow;
+     }
+  </style>
+</head>
+<body>
+    <h1>Primeiro JavaScript</h1>
+    <script>
+      /*
+      Converter para inteiro: parseInt()
+      Converter para ponto flutuante: parseFloat()
+      Converter pros dois: Number()
+      COnverter para string: String() ou .toString()
+      */
+
+      var n1 = window.prompt('Digite um valor:');
+      var n2 = window.prompt('Digite um valor:');
+      var s = Number(n1) + Number(n2);
+      window.alert(`A soma entre ${n1} e ${n2} é de ${s}`); // template string
+    </script>
+</body>
+</html>

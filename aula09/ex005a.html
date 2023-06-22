@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiros passos em DOM</title>
+  <style>
+    body {
+      background: #1f1f1f;
+      color: white;
+      font: normal;
+    }
+    
+    #js {
+      font-size: 20px;
+      color: darkorchid;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    document.writeln('<h1>Iniciando estudos com DOM</h1>');
+    document.writeln('<h2>Olá, mundo</h2>');
+
+    //Mostra o charset do documento
+    window.document.writeln('<p id="js">O charset do documento: ' + window.document.charset + '</p>');
+    //Mostra o appName do documento
+    window.document.writeln('<p id="js">O appName do documento: ' + window.navigator.appName + '</p>');
+    //Mostra a URL do documento
+    window.document.writeln('<p id="js">A URL do site: ' + window.document.URL + '</p>');
+
+  </script>
+</body>
+</html>
